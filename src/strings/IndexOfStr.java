@@ -9,7 +9,7 @@ public class IndexOfStr {
 	 * On success Index value , -1 failure 
 	 * 
 	 * we will be solving this problem in O(n) complexity
-	 * 
+	 * Knuth Pratt Murris Algo 
 	 */
 	
 	public int indexOf(String mainStr, String subStr){
@@ -19,6 +19,9 @@ public class IndexOfStr {
 		int subLen = subStr.length();
 		int m1 =0; // will act as pointer to the current character in array  
 		int s1 =0;
+
+		if(subLen > mainLen)
+			return -1;
 		
 		while(m1<mainLen){
 			if(mainStr.charAt(m1) == subStr.charAt(s1)){

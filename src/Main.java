@@ -1,7 +1,9 @@
 import java.util.HashMap;
 
+import dynamicProgramming.SubStringDictionary;
 import stacksAndQueues.*;
 import strings.*;
+import sun.org.mozilla.javascript.internal.regexp.SubString;
 
 public class Main {
 
@@ -52,10 +54,17 @@ public class Main {
 		System.out.println("POPPPED VALUE FROM ONE ---"+ts.size(1));
 		
 		*/
-		
+		/*
 		IndexOfStr is = new IndexOfStr();
 		int index = is.indexOf("Hello World Prog", "orl");
-		System.out.println("Index of string is "+ index);
+		System.out.println("Index of string is "+ index);*/
+		
+		/*ReverseString rs = new ReverseString();
+		System.out.println("The reverse string for hello is === "+rs.stringReverse("hello")); */
+		
+		SubStringDictionary sd = new SubStringDictionary();
+		System.out.println("THE VALUE IS ---- "+sd.isWordBreakable("ilikesam"));
+		
 	}
 	
 }
